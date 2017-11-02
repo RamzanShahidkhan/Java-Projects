@@ -1,0 +1,42 @@
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+
+public class Practice extends JFrame implements ActionListener {
+	JTextField input1, input2;//declare text fields
+	private JButton jb;
+		
+	public Practice() {
+	    super("String Joiner");	                //call to JFrame constructor
+
+	    setLayout(new GridLayout(2,3));
+		
+	    input1 = new JTextField();	//create text field
+	    input2 = new JTextField();
+	    jb = new JButton("Join");
+	    jb.addActionListener(this);
+	    
+	    getContentPane().add(input1);	//add field to frame
+	    getContentPane().add(input2);
+	    getContentPane().add(jb);
+	    
+		
+	    setSize(400,100);	            //set frame size
+	    setVisible(true);	            //set frame as being visible
+	    //set frame to close properly
+	    setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	}
+	
+
+	//implementation of method in ActionListener interface that
+	//handles GUI events from user.
+	public void actionPerformed(ActionEvent e) {
+	   
+	}
+
+	//main method for testing that creates instance of this class
+	public static void main(String args[]) {
+		Practice c = new Practice();
+	}
+
+}

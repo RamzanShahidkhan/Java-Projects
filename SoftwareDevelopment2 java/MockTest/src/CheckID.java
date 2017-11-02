@@ -1,0 +1,35 @@
+import java.sql.*;
+import java.io.*;
+
+public class CheckID {
+
+    static String queryString = "select * from salary";
+
+    public static void main (String[] args) throws ClassNotFoundException {
+       
+//	String url = 
+//	    "jdbc:postgresql://pgdbs8.inf.brad.ac.uk/sd2?user=sd2user&password=sd2user";
+    	String url="jdbc:mysql://localhost/happy";
+	try {
+	   // Class.forName("org.postgresql.Driver");
+	    Connection con = DriverManager.getConnection(url,"root","");     
+	    Statement stmt = con.createStatement();   
+	    ResultSet rs = stmt.executeQuery(queryString);
+	    while (rs.next()) {
+		if (rs.getString(3).contains(args[0]) || rs.getString(2).contains(args[1])) {           //filter on project ID
+		    for (int c = 1; c <= rs.getMetaData().getColumnCount(); c++)
+		    {
+			System.out.print(rs.getString(c)+" ");
+		    }
+		    System.out.println();
+		}
+           }    
+	    rs.close(); 
+	    stmt.close(); 
+	    con.close();
+	}
+	catch (Exception e) {
+	    System.out.println("Error: " + e.getMessage() + "\n" + e.toString());
+	}
+    }
+}

@@ -1,0 +1,5 @@
+Write a java program which reads a text file and makes a list of all the words in that file.
+ The list of words is output to another file. 
+ Improve the program so that it also keeps track of the number of times that each word occurs in the file. 
+ Write a list to the output file in which the words are sorted according to the number of times they occurred in the file. 
+The word that occurred most often should be listed first.

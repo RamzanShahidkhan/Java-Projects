@@ -1,0 +1,32 @@
+package synchronization;
+
+import java.util.Arrays;
+import java.util.Random;
+
+public class SimpleArray {
+	private final int [] array;
+	private int writeIndex=0;
+	private final static Random generator=new Random();
+	public SimpleArray(int size)
+	{
+		array=new int[size];
+	}
+	public void add(int value) {
+		int position=writeIndex;
+		try {
+			Thread.sleep(generator.nextInt(500));
+		} 
+		catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		array[position]=value;
+		System.out.printf("5% wrote to %2d to element %d.\n ",
+				Thread.currentThread().getName(),value,position);
+		
+		}
+	public String toString()
+	{
+		return "\n contents of simpleArray:\n"+ Arrays.toString(array);
+	}
+
+}

@@ -1,0 +1,27 @@
+'''
+Created on Jul 25, 2017
+
+@author: Shahidkhan
+'''
+
+class Animal:
+    def talk(self):print("i have to say something! ")
+    def walt(self):print("i am walking ")
+    def clothes(self):print("i have nice clothes")
+    
+
+class Duck(Animal):
+    def quack(self):
+        print('Qaaaak')
+    
+    def walk(self):
+        print("walk like a duck")
+def main():
+    donald=Duck()
+    print(donald)
+    donald.quack()
+    donald.walk()
+
+    
+if __name__ == '__main__':main()
+    

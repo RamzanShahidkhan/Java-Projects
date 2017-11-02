@@ -1,0 +1,37 @@
+'''
+Created on Jul 25, 2017
+
+@author: Shahidkhan
+'''
+
+class Animal:
+    def talk(self):print("i have to say something! ")
+    def walt(self):print("hey! i am walking ")
+    def clothes(self):print("i have nice clothes")
+    
+
+class Duck(Animal):
+    def quack(self):
+        print('Qaaaak')
+    
+    def walk(self):
+        super().walt()
+        print("walk like a duck")
+class Dog:
+    def bark(self):
+        print('Woof!')
+    def fur(self):
+        print("the dog has brown and white fur")
+def main():
+    '''
+    donald=Duck()
+    donald.quack()
+    donald.walk()
+    donald.clothes()
+    #polymorphism  '''
+    fido=Dog()
+    fido.bark()
+    fido.fur()
+    
+if __name__ == '__main__':main()
+    

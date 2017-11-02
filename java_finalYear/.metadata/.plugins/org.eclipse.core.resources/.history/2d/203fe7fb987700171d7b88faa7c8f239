@@ -1,0 +1,23 @@
+'''
+Created on Jul 25, 2017
+
+@author: Shahidkhan
+'''
+
+
+class Duck:
+    def __init__(self, color='white'):
+        self._color=color
+    def quack(self):
+        print('Qaaaak')
+    
+    def walk(self):
+        print("walk like a duck")
+def main():
+    donald=Duck()
+    donald._color='Blue'
+    print(donald)
+
+    
+if __name__ == '__main__':main()
+    

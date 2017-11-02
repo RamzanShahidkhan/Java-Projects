@@ -1,0 +1,15 @@
+'''
+Created on Jul 22, 2017
+
+@author: Shahidkhan
+'''
+
+def main():
+    s='this is s string'
+    for c in s:
+        if c=='s':
+        print(c,end='')
+    else:
+        print("else")
+
+if __name__ == "__main__":main()

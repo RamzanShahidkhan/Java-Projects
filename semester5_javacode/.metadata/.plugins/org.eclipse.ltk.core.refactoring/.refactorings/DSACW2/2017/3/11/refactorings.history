@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;DSACW2/hashrecord&apos; to &apos;Results.txt&apos;" description="Rename resource &apos;hashrecord&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="hashrecord" name="Results.txt" stamp="1489570586431" updateReferences="true"/>
+</session>

@@ -1,0 +1,3 @@
+Name: ramzan
+populat 27
+gRate  0.02%

@@ -1,0 +1,45 @@
+'''
+Created on Jul 25, 2017
+
+@author: Shahidkhan
+'''
+
+
+
+class Duck:
+    def quack(self):
+        print('Qaaaak')
+    
+    def walk(self):
+        super().walt()
+        print("walk like a duck")
+    def bark(self):
+        print("dog can not bark")
+    def fur(self):
+        print("the duck has feathers")
+    
+        
+class Dog:
+    def bark(self):
+        print('Woof!')
+    def fur(self):
+        print("the dog has brown and white fur")
+    def walk(self):
+        print("walks like a dog")
+    def quack(self):
+        print("dog can not quack")
+    
+def main():
+    '''
+    donald=Duck()
+    donald.quack()
+    donald.walk()
+    donald.clothes()
+    #polymorphism  '''
+    donald=Duck()
+    fido=Dog()
+    fido.bark()
+    fido.fur()
+    
+if __name__ == '__main__':main()
+    

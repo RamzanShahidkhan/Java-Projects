@@ -1,0 +1,30 @@
+'''
+Created on Jul 25, 2017
+
+@author: Shahidkhan
+'''
+
+
+class Duck:
+    def __init__(self, **kwargs):
+        self.variables=kwargs
+    def quack(self):
+        print('Qaaaak')
+    
+    def walk(self):
+        print("walk like a duck")
+    def set_color(self,color):
+        self.variables['color']=color
+    def get_color(self):
+        return self.variables.get('color',None)
+    def set_varible(self,k,v):
+        self.variables[k]=v
+    def get_variable(self,k):
+        return self.variables.get(k,None)
+def main():
+    donald=Duck(feet=2)
+    print(donald.get_variable('feet'))
+
+    
+if __name__ == '__main__':main()
+    

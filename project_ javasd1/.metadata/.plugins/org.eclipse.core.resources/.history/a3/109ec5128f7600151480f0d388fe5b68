@@ -1,0 +1,15 @@
+package ramzan;
+
+import java.util.Scanner;
+
+public class Indexof5 {
+	public static void main(String [] args)
+	{
+		Scanner input=new Scanner(System.in);
+		System.out.println("Enter line of text!");
+		String s=input.nextLine();
+		
+		System.out.println(s);
+	}
+
+}

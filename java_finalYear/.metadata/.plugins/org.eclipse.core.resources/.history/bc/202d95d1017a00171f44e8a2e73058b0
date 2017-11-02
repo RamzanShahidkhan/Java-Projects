@@ -1,0 +1,13 @@
+'''
+Created on Aug 5, 2017
+
+@author: Shahidkhan
+'''
+
+import sys
+
+def main():
+    print("python version {}.{}.{}".format(*sys.version_info))
+    print(sys.platform)
+
+if __name__ == '__main__':

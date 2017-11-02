@@ -1,0 +1,3 @@
+Write a java program which reads a text file and makes a list of all the words in that file.
+The list of words is output to another file. 
+ 

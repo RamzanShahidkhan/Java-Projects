@@ -1,0 +1,6 @@
+Name: Calif.condar
+populat 27
+gRate  0.02%
+Name: Calif.condar
+populat 27
+gRate  0.02%

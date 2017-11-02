@@ -1,0 +1,22 @@
+package synchronization;
+
+import java.util.concurrent.ArrayBlockingQueue;
+
+import bufferDemo.Buffer;
+
+public class BlockingBuffer implements Buffer{
+
+	private final ArrayBlockingQueue<Integer> buffer;
+	@Override
+	public void set(int value) throws InterruptedException {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public int get(int value) throws InterruptedException {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

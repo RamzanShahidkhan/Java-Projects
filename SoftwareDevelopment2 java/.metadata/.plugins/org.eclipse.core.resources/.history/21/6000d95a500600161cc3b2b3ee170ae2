@@ -1,0 +1,196 @@
+import java.awt.BorderLayout;
+import java.awt.Color;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JTabbedPane;
+import javax.swing.SwingConstants;
+import java.awt.Font;
+import javax.swing.JTextField;
+import javax.swing.JComboBox;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+
+public class UserAccount extends JFrame {
+	private int [] days;
+	private JTextField textField;
+	private JTextField textField_1;
+	private JTextField textField_2;
+	private JTextField textField_3;
+	private JTextField textField_4;
+	private JTextField textField_5;
+	private JTextField textField_6;
+	
+	public UserAccount()
+	{
+		//super("Create Account");
+		JTabbedPane tab=new JTabbedPane();
+		JPanel p1=new JPanel();
+		tab.addTab("SignUp",null, p1,"First Panel");
+		p1.setLayout(null);
+		days=new int[30];
+		for(int i=0; i<days.length; i++)
+		{
+			
+			days[i]=i;
+			System.out.println(days[i]);
+		}
+		
+		
+		JLabel lblIfYouHave = new JLabel("If you have already account");
+		lblIfYouHave.setForeground(new Color(0, 128, 0));
+		lblIfYouHave.setFont(new Font("Tahoma", Font.BOLD, 12));
+		lblIfYouHave.setBounds(49, 11, 238, 14);
+		p1.add(lblIfYouHave);
+		
+		JLabel lblEmail = new JLabel("Email:");
+		lblEmail.setFont(new Font("Tahoma", Font.BOLD, 12));
+		lblEmail.setForeground(new Color(0, 128, 0));
+		lblEmail.setBounds(30, 36, 67, 14);
+		p1.add(lblEmail);
+		
+		textField = new JTextField();
+		textField.setBounds(116, 34, 111, 20);
+		p1.add(textField);
+		textField.setColumns(10);
+		
+		JLabel lblPassword = new JLabel("Password:");
+		lblPassword.setForeground(new Color(0, 128, 0));
+		lblPassword.setFont(new Font("Tahoma", Font.BOLD, 12));
+		lblPassword.setBounds(30, 61, 67, 14);
+		p1.add(lblPassword);
+		
+		textField_1 = new JTextField();
+		textField_1.setBounds(116, 59, 111, 20);
+		p1.add(textField_1);
+		textField_1.setColumns(10);
+		
+		JButton btnLogin = new JButton("Login");
+		btnLogin.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				UserPayment pay=new UserPayment();
+				setVisible(false);
+			}
+		});
+		btnLogin.setFont(new Font("Tahoma", Font.BOLD, 12));
+		btnLogin.setBackground(new Color(240, 240, 240));
+		btnLogin.setForeground(new Color(0, 128, 0));
+		btnLogin.setBounds(260, 36, 89, 23);
+		p1.add(btnLogin);
+		
+		JLabel lblFirstname = new JLabel("FirstName:");
+		lblFirstname.setForeground(new Color(0, 128, 0));
+		lblFirstname.setFont(new Font("Tahoma", Font.BOLD, 12));
+		lblFirstname.setBounds(30, 107, 67, 14);
+		p1.add(lblFirstname);
+		
+		textField_2 = new JTextField();
+		textField_2.setBounds(115, 105, 74, 20);
+		p1.add(textField_2);
+		textField_2.setColumns(10);
+		
+		JLabel lblLastname = new JLabel("LastName:");
+		lblLastname.setForeground(new Color(0, 128, 0));
+		lblLastname.setFont(new Font("Tahoma", Font.BOLD, 12));
+		lblLastname.setBounds(206, 107, 67, 14);
+		p1.add(lblLastname);
+		
+		textField_3 = new JTextField();
+		textField_3.setBounds(283, 105, 74, 20);
+		p1.add(textField_3);
+		textField_3.setColumns(10);
+		
+		JLabel lblEmail_1 = new JLabel("Email:");
+		lblEmail_1.setFont(new Font("Tahoma", Font.BOLD, 12));
+		lblEmail_1.setForeground(new Color(0, 128, 0));
+		lblEmail_1.setBounds(30, 138, 67, 14);
+		p1.add(lblEmail_1);
+		
+		textField_4 = new JTextField();
+		textField_4.setBounds(115, 136, 136, 20);
+		p1.add(textField_4);
+		textField_4.setColumns(10);
+		
+		JLabel lblNewLabel = new JLabel("Password:");
+		lblNewLabel.setFont(new Font("Tahoma", Font.BOLD, 12));
+		lblNewLabel.setForeground(new Color(0, 128, 0));
+		lblNewLabel.setBounds(30, 168, 67, 14);
+		p1.add(lblNewLabel);
+		
+		textField_5 = new JTextField();
+		textField_5.setBounds(115, 167, 86, 20);
+		p1.add(textField_5);
+		textField_5.setColumns(10);
+		
+		JLabel lblConfirmPassword = new JLabel("Confirm Password:");
+		lblConfirmPassword.setForeground(new Color(0, 128, 0));
+		lblConfirmPassword.setFont(new Font("Tahoma", Font.BOLD, 11));
+		lblConfirmPassword.setBounds(30, 198, 67, 20);
+		p1.add(lblConfirmPassword);
+		
+		textField_6 = new JTextField();
+		textField_6.setBounds(115, 198, 86, 20);
+		p1.add(textField_6);
+		textField_6.setColumns(10);
+		
+		JLabel lblDateOfBirth = new JLabel("Date of Birth:");
+		lblDateOfBirth.setFont(new Font("Tahoma", Font.BOLD, 11));
+		lblDateOfBirth.setForeground(new Color(0, 128, 0));
+		lblDateOfBirth.setBounds(30, 232, 74, 14);
+		p1.add(lblDateOfBirth);
+		
+		for(int i=1; i<days.length; i++)
+		{
+			
+		}
+		
+		JComboBox day = new JComboBox();
+		
+//		for( int i=0; i<days.length ; i++)
+//		{
+//			day.addItem(days[i]);
+//			//day.it
+//		}
+		day.setBounds(116, 229, 28, 20);
+		p1.add(day);
+		
+		JComboBox month = new JComboBox();
+		month.setBounds(154, 229, 28, 20);
+		p1.add(month);
+		
+		JComboBox year = new JComboBox();
+		year.setBounds(192, 229, 28, 20);
+		p1.add(year);
+		
+		JButton btnSignup = new JButton("SignUp");
+		btnSignup.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				UserPayment pay=new UserPayment();
+				setVisible(false);
+			}
+		});
+		btnSignup.setForeground(new Color(0, 128, 0));
+		btnSignup.setFont(new Font("Tahoma", Font.BOLD | Font.ITALIC, 12));
+		btnSignup.setBounds(112, 280, 89, 23);
+		p1.add(btnSignup);
+		
+		
+		getContentPane().add(tab);
+		
+		setSize(400,400);
+		setVisible(true);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+	}
+	
+
+	public static void main(String[] args) {
+	    UserAccount a=new UserAccount();
+	    
+	    
+     
+	}
+
+}

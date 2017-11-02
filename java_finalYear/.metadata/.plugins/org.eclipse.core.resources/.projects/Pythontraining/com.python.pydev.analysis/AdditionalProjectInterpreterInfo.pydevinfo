@@ -1,0 +1,62 @@
+-- VERSION_4
+-- START DISKCACHE_2
+F:\java_project\java_finalYear\.metadata\.plugins\org.eclipse.core.resources\.projects\Pythontraining\com.python.pydev.analysis\v2_indexcache
+moduleFile|1495515387895094000|F:\Pythonbegin\moduleFile.py
+functions|1495600691754339000|F:\Pythonbegin\functions.py
+strings|1495520123931256000|F:\Pythonbegin\strings.py
+classes|1495604487295266000|F:\Pythonbegin\classes.py
+firstfile|1495514502714351000|F:\Pythonbegin\firstfile.py
+inheritance|1495605558091668000|F:\Pythonbegin\inheritance.py
+loops|1495599212453349000|F:\Pythonbegin\loops.py
+tuto|1500566210557597000|F:\Pythonbegin\tuto.py
+hello|1500481260661848000|F:\Pythonbegin\hello.py
+list_slice|1495554368340324000|F:\Pythonbegin\list_slice.py
+list|1495564062608529000|F:\Pythonbegin\list.py
+-- END DISKCACHE
+-- START DICTIONARY
+13
+11=Person.__init__
+2=functions
+12=Parent2
+7=classes
+4=inheritance
+5=loops
+13=Parent1
+10=Person.setFullName
+3=list
+8=moduleFile
+1=strings
+6=list_slice
+9=Person
+-- END DICTIONARY
+-- START TREE 1
+17
+a|1|a!11@
+add|1|add!18@
+ani|1|animalName!27@
+b|1|b!11@
+c|1|c!11@
+chi|2|Child!33@child!35@
+d|1|d!11@
+e|1|e!11@
+fna|1|fname!18@
+l|1|l!43@
+nam|2|name!27@names!51@
+par|2|Parent1!33@Parent2!33@
+per|2|Person!57@personName!59@
+stu|1|studentScore!18@
+x|1|x!67@
+y|1|y!67@
+z|1|z!67@
+-- END TREE
+-- START TREE 2
+8
+__d|1|__del__!9&58@
+__i|1|__init__!9&58@
+fir|1|firstName!10&59@
+id|1|id!11&59@
+las|1|lastName!10&59@
+pri|1|printFullName!9&58@
+set|1|setFullName!9&58@
+val|4|value4!12&35@value2!13&35@value3!12&35@value1!13&35@
+-- END TREE

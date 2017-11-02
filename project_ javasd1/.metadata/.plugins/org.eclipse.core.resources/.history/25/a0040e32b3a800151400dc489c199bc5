@@ -1,0 +1,52 @@
+import java.awt.FlowLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.Icon;
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
+
+public class Buttonframe extends JFrame 
+{
+	private JButton plain;
+	private JButton fancy;
+	public Buttonframe()
+	{
+		super("Testing buttons");
+		setLayout(new FlowLayout());
+		plain= new JButton("plain");
+		add(plain);
+		Icon Bug1=new ImageIcon(("bug1"));
+		//Icon Bug2=new ImageIcon(getClass().getResource("bug2.jpg"));
+		fancy=new JButton("Fancy",Bug1);
+		fancy.setRolloverIcon(null);
+		add(fancy);
+		ButtonHandler handler=new ButtonHandler();
+		fancy.addActionListener(handler);
+		plain.addActionListener(handler);
+		
+		
+	}
+	private class ButtonHandler implements ActionListener
+	{
+
+		@Override
+		public void actionPerformed(ActionEvent e)
+		{
+			JOptionPane.showMessageDialog(Buttonframe.this,
+					String.format("you pressed:%s", e.getActionCommand()));
+			
+		}
+		
+	}
+	public static void main(String [] args)
+	{
+		Buttonframe f=new Buttonframe();
+		f.setSize(300,300);;
+		f.setVisible(true);
+		f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	}
+
+}

@@ -1,0 +1,19 @@
+package ramzan;
+
+import java.util.Scanner;
+
+public class piglatin {
+ public static void main(String [] args)
+ {
+	 Scanner input=new Scanner(System.in);
+	 String s=input.nextLine();
+	 System.out.println("length is :%d\n"+ s.length());
+	 String[] tokens= s.split( " " );
+	 for(int i=1; i<=s.length(); i++)
+	 {
+	    //System.out.printf( "%c ",s.charAt(i) );
+		
+	    System.out.println(tokens[i]);
+	 }
+ }
+}

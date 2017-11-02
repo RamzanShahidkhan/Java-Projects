@@ -1,0 +1,36 @@
+public class Prac implements Practice{
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Prac obj = new Prac();
+		System.out.println(obj.addUp(23, 23));
+		obj.evenOdd(67);
+
+	}
+
+	@Override
+	public int addUp(int x, int y) {
+		// TODO Auto-generated method stub
+		return x+y;
+	}
+
+	@Override
+	public void evenOdd(int x) {
+		// TODO Auto-generated method stub
+		
+		String s1 = "mal";
+		String s2 = "malik";
+		
+		if(s1.contains(s2)){
+			System.out.println("I am right");
+		}
+		
+		if(x%2==0)
+			System.out.println("It's even Buddy");
+		else
+			System.out.println("it's odd kanjroooo!!!");
+		
+	}
+
+}

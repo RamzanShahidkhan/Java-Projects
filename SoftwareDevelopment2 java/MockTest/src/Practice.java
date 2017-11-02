@@ -1,0 +1,37 @@
+
+//Classes that implement this interface should define the following
+//two methods that perform simple operations with numbers.
+
+/**
+ * @author Personal
+ *
+ */
+public class Practice{
+
+ 
+    /**
+     * @param x
+     * @param y
+     * @return
+     */
+    public int addUp(int x, int y){
+    	
+    	return x+y;
+    }
+
+    /**
+     * The evenOdd method should check if the passed argument is an even
+     * or an odd number and print to the standard output (terminal) either
+     * "EVEN" or "ODD"
+     *
+     * @param x the integer to be checked
+     */
+    public void evenOdd(int x){
+    	
+    	if(x%2==0)
+    		System.out.println("It's Even");
+    	else
+    		System.out.println();
+    }
+
+}

@@ -1,0 +1,31 @@
+
+public class Employ {
+	private int id;
+	private String fname;
+	private String lname;
+	private DOB dob;
+	
+	public Employ(int ID,String name, String nam,int d,int m,int y)
+	{   id=ID;
+		fname=name;
+		lname=nam;
+		dob= new DOB(d,m,y);
+	}
+	public  boolean employee(Employ e1,Employ e2 )
+	{     
+		if(( e1.fname.equals(e2.fname)) &&( e1.lname.equals(e2.lname)))
+	     {
+		
+		    return true;
+	    }
+		return false;
+	}
+	public static void main(String[] args)
+	{
+	
+		Employ emp=new Employ(2,"Ali","khan",5,4,2015);
+		Employ emp1=new Employ(4,"Ram","khan",7,8,1990);
+		System.out.println(emp1.employee(emp1, emp));
+	}
+
+}

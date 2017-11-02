@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ExternalProjectImportWizard">
+		<item value="false" key="WizardProjectsImportPage.STORE_NESTED_PROJECTS"/>
+		<item value="true" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
+		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="E:\SD2\07_Java7Files\WatchDirectory"/>
+			<item value="E:\SD2\07_Java7Files\FindingFiles"/>
+			<item value="E:\SD2\07_Java7Files\FileTree"/>
+			<item value="E:\SD2\07_Java7Files\ReadingAndWriting"/>
+			<item value="E:\SD2\07_Java7Files\ManageFiles"/>
+			<item value="E:\SD2\07_Java7Files\PathClass"/>
+			<item value="E:\SD2\06_Testing\Throwing"/>
+			<item value="E:\SD2\06_Testing\TryWithResources"/>
+			<item value="E:\SD2\06_Testing\Finally"/>
+			<item value="E:\SD2\06_Testing\UsingAsserts"/>
+			<item value="E:\SD2\05_Collections\Queues"/>
+			<item value="E:\SD2\05_Collections\UseLinkedList"/>
+			<item value="E:\SD2\05_Collections\UseTreeSet"/>
+			<item value="E:\SD2\05_Collections\UseHashSet"/>
+			<item value="E:\SD2\04_Reflection\WalkInheritance"/>
+			<item value="E:\SD2\04_Reflection\TypeInfo"/>
+			<item value="E:\SD2\04_Reflection\TheClassClass"/>
+			<item value="E:\SD2\03_ClassStructures\EnumClasses"/>
+			<item value="E:\SD2\03_ClassStructures\AnonClasses"/>
+			<item value="E:\SD2\03_ClassStructures\LocalClasses"/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value=""/>
+		</list>
+	</section>
+	<section name="NewWizardAction">
+		<item value="org.eclipse.fx.ide.jdt.ui.javafx" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.ui.Basic"/>
+			<item value="org.eclipse.cdt.ui.newCWizards"/>
+			<item value="org.eclipse.fx.ide"/>
+			<item value="org.eclipse.fx.ide/org.eclipse.fx.ide.samples"/>
+		</list>
+	</section>
+</section>

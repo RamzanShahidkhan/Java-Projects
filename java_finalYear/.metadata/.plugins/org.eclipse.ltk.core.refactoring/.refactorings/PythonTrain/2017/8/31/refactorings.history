@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;PythonTrain/src/Excercies/DataBases&apos; to &apos;16 DataBases&apos;" description="Rename resource &apos;DataBases&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/Excercies/DataBases" name="16 DataBases" stamp="1501951537989" updateReferences="true"/>
+</session>

@@ -1,0 +1,27 @@
+'''
+Created on Aug 5, 2017
+
+@author: Shahidkhan
+'''
+
+import sys
+from idlelib.iomenu import encoding
+
+def main():
+    print("python version {}.{}.{}".format(*sys.version_info))
+    print(sys.platform)
+    
+    import urllib.request
+    page= urllib.request.urlopen('https://www.quora.com/')
+    print(page)
+    for line in page:print(str(line, encoding= 'utf_8'), end = '')
+    
+    '''
+    import os
+    print(os.name)
+    print(os.getenv('PATH'))
+    print(os.getcwd())
+    '''
+    
+
+if __name__ == '__main__':main()
